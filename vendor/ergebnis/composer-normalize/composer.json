@@ -1,0 +1,70 @@
+{
+  "name": "ergebnis/composer-normalize",
+  "description": "Provides a composer plugin for normalizing composer.json.",
+  "license": "MIT",
+  "type": "composer-plugin",
+  "keywords": [
+    "composer",
+    "normalizer",
+    "normalize",
+    "plugin"
+  ],
+  "authors": [
+    {
+      "name": "Andreas Möller",
+      "email": "am@localheinz.com"
+    }
+  ],
+  "homepage": "https://github.com/ergebnis/composer-normalize",
+  "support": {
+    "issues": "https://github.com/ergebnis/composer-normalize/issues",
+    "source": "https://github.com/ergebnis/composer-normalize"
+  },
+  "require": {
+    "php": "^8.0",
+    "composer-plugin-api": "^2.0.0",
+    "ergebnis/json-normalizer": "~2.1.0",
+    "ergebnis/json-printer": "^3.3.0",
+    "justinrainbow/json-schema": "^5.2.12",
+    "localheinz/diff": "^1.1.1"
+  },
+  "require-dev": {
+    "composer/composer": "^2.4.4",
+    "ergebnis/license": "^2.1.0",
+    "ergebnis/php-cs-fixer-config": "^5.0.0",
+    "fakerphp/faker": "^1.20.0",
+    "phpunit/phpunit": "^9.5.26",
+    "psalm/plugin-phpunit": "~0.18.3",
+    "symfony/filesystem": "^6.0.13",
+    "vimeo/psalm": "^5.0.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Ergebnis\\Composer\\Normalize\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ergebnis\\Composer\\Normalize\\Test\\": "test/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true
+    },
+    "platform": {
+      "php": "8.0.25"
+    },
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "extra": {
+    "class": "Ergebnis\\Composer\\Normalize\\NormalizePlugin",
+    "composer-normalize": {
+      "indent-size": 2,
+      "indent-style": "space"
+    }
+  }
+}

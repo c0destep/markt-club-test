@@ -1,0 +1,86 @@
+{
+    "name": "aplus/framework",
+    "description": "Aplus Framework",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "aplus",
+        "framework"
+    ],
+    "authors": [
+        {
+            "name": "Natan Felles",
+            "email": "natanfelles@gmail.com",
+            "homepage": "https://natanfelles.github.io"
+        }
+    ],
+    "homepage": "https://aplus-framework.com/packages/framework",
+    "support": {
+        "email": "support@aplus-framework.com",
+        "issues": "https://gitlab.com/aplus-framework/framework/issues",
+        "forum": "https://aplus-framework.com/forum",
+        "source": "https://gitlab.com/aplus-framework/framework",
+        "docs": "https://docs.aplus-framework.com/guides/framework/"
+    },
+    "funding": [
+        {
+            "type": "Aplus Sponsor",
+            "url": "https://aplus-framework.com/sponsor"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "aplus/autoload": "^2.0.2",
+        "aplus/cache": "^3.0.1",
+        "aplus/cli": "^2.3.1",
+        "aplus/config": "^3.0.1",
+        "aplus/crypto": "^1.0.2",
+        "aplus/database": "^3.2.1",
+        "aplus/database-extra": "^3.0.1",
+        "aplus/date": "^2.0.1",
+        "aplus/debug": "^3.3.4",
+        "aplus/dev-commands": "^1.0.0",
+        "aplus/email": "^3.2.1",
+        "aplus/events": "^1.4.2",
+        "aplus/factories": "^1.0.1",
+        "aplus/helpers": "^3.0.1",
+        "aplus/http": "^5.2.1",
+        "aplus/http-client": "^4.2.1",
+        "aplus/image": "^2.2.3",
+        "aplus/language": "^3.0.2",
+        "aplus/log": "^3.0.1",
+        "aplus/mvc": "^3.1.0",
+        "aplus/pagination": "^3.3.0",
+        "aplus/routing": "^3.4.2",
+        "aplus/session": "^3.2.1",
+        "aplus/validation": "^2.1.2"
+    },
+    "require-dev": {
+        "ext-xdebug": "*",
+        "aplus/coding-standard": "^1.12",
+        "ergebnis/composer-normalize": "^2.25",
+        "phpmd/phpmd": "^2.12",
+        "phpstan/phpstan": "^1.5",
+        "phpunit/phpunit": "^9.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "classmap": [
+            "src/Aplus.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        },
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}

@@ -1,0 +1,62 @@
+<?php
+/*
+ * This file is part of Aplus Framework Validation Library.
+ *
+ * (c) Natan Felles <natanfelles@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+return [
+    'alpha' => 'El campo {field} sólo requiere caracteres alfabéticos.',
+    'alphaNumber' => 'El campo {field} sólo requiere caracteres alfabéticos y numéricos.',
+    'number' => 'El campo {field} sólo requiere caracteres numéricos.',
+    'uuid' => 'El campo {field} requiere un identificador UUID válido.',
+    'timezone' => 'El campo {field} requiere una zona horaria válida.',
+    'base64' => 'El campo {field} requiere una codificación base64 válida.',
+    'md5' => 'El campo {field} requiere un hash MD5 válido.',
+    'hex' => 'El campo {field} requiere una numeración hexadecimal válida.',
+    'hexColor' => 'El campo {field} requiere un color hexadecimal válido.',
+    'json' => 'El campo {field} requiere un formato JSON válido.',
+    'regex' => 'El campo {field} no coincide con el estándar requerido.',
+    'notRegex' => 'El campo {field} coincide con un estándar no válido.',
+    'email' => 'El campo {field} requiere una dirección de correo electrónico válida.',
+    'greater' => 'El campo {field} debe ser mayor que {0}.',
+    'greaterOrEqual' => 'El campo {field} debe ser mayor o igual que {0}.',
+    'less' => 'El campo {field} debe ser menor que {0}.',
+    'lessOrEqual' => 'El campo {field} debe ser menor o igual que {0}.',
+    'in' => 'El campo {field} no tiene un valor permitido.',
+    'notIn' => 'El campo {field} tiene un valor no permitido.',
+    'ip' => 'El campo {field} requiere una dirección de IP válida.',
+    'url' => 'El campo {field} requiere una dirección URL válida.',
+    'datetime' => 'El campo {field} no coincide con el formato fecha/hora requerido.',
+    'between' => 'El campo {field} debe estar entre {0} y {1}.',
+    'notBetween' => 'El campo {field} no puede estar entre {0} y {1}.',
+    'equals' => 'El campo {field} debe ser igual al campo {0}.',
+    'notEquals' => 'El campo {field} no puede ser igual al campo {0}.',
+    'maxLength' => 'El campo {field} requiere {0} o menos cantidad de caracteres.',
+    'minLength' => 'El campo {field} requiere {0} o más cantidad de caracteres.',
+    'length' => 'El campo {field} requiere exactamente {0} caracteres.',
+    'required' => 'El campo {field} es requerido.',
+    'isset' => 'El campo {field} debe enviarse.',
+    'latin' => 'El campo {field} sólo requiere caracteres latinos.',
+    'uploaded' => 'El campo {field} requiere que se cargue un archivo.',
+    'maxSize' => 'El campo {field} requiere un archivo que no exceda el tamaño máximo de {0} kilobytes.',
+    'ext' => 'El campo {field} requiere un archivo con una extensión aceptada: {args}.',
+    'mimes' => 'El campo {field} requiere un archivo con un tipo MIME aceptado: {args}.',
+    'image' => 'El campo {field} requiere una imagen.',
+    'maxDim' => 'El campo {field} requiere una imagen que no exceda las dimensiones máximas de {0} de ancho y {1} de alto. ',
+    'minDim' => 'El campo {field} requiere una imagen que tenga las dimensiones mínimas de {0} de ancho y {1} de alto.',
+    'dim' => 'El campo {field} requiere una imagen con las dimensiones exactas de {0} de ancho y {1} de alto.',
+    'specialChar' => 'El campo {field} requiere caracteres especiales.',
+    'optional' => 'El campo {field} es opcional. Si no se establece, la validación pasa.',
+    'blank' => 'El campo {field} puede tener un texto en blanco para pasar.',
+    'null' => 'El campo {field} puede tener un valor nulo para pasar.',
+    'empty' => 'El campo {field} puede tener un valor vacío para pasar.',
+    'array' => 'El campo {field} requiere una matriz.',
+    'bool' => 'El campo {field} requiere un valor lógico.',
+    'float' => 'El campo {field} requiere un número flotante.',
+    'int' => 'El campo {field} requiere un número entero.',
+    'object' => 'El campo {field} requiere un objeto.',
+    'string' => 'El campo {field} requiere un texto.',
+];

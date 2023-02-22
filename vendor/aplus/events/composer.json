@@ -1,0 +1,64 @@
+{
+    "name": "aplus/events",
+    "description": "Aplus Framework Events Library",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "events",
+        "listen",
+        "trigger"
+    ],
+    "authors": [
+        {
+            "name": "Natan Felles",
+            "email": "natanfelles@gmail.com",
+            "homepage": "https://natanfelles.github.io"
+        }
+    ],
+    "homepage": "https://aplus-framework.com/packages/events",
+    "support": {
+        "email": "support@aplus-framework.com",
+        "issues": "https://gitlab.com/aplus-framework/libraries/events/issues",
+        "forum": "https://aplus-framework.com/forum",
+        "source": "https://gitlab.com/aplus-framework/libraries/events",
+        "docs": "https://docs.aplus-framework.com/guides/libraries/events/"
+    },
+    "funding": [
+        {
+            "type": "Aplus Sponsor",
+            "url": "https://aplus-framework.com/sponsor"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "ext-xdebug": "*",
+        "aplus/coding-standard": "^1.14",
+        "ergebnis/composer-normalize": "^2.15",
+        "jetbrains/phpstorm-attributes": "^1.0",
+        "phpmd/phpmd": "^2.13",
+        "phpstan/phpstan": "^0.12",
+        "phpunit/phpunit": "^9.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Framework\\Events\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Events\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        },
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}

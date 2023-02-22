@@ -1,0 +1,64 @@
+{
+    "name": "aplus/coding-standard",
+    "description": "Aplus Framework Coding Standard Library",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "coding-standard",
+        "cs",
+        "cs-fixer",
+        "php-cs-fixer"
+    ],
+    "authors": [
+        {
+            "name": "Natan Felles",
+            "email": "natanfelles@gmail.com",
+            "homepage": "https://natanfelles.github.io"
+        }
+    ],
+    "homepage": "https://aplus-framework.com/packages/coding-standard",
+    "support": {
+        "email": "support@aplus-framework.com",
+        "issues": "https://gitlab.com/aplus-framework/libraries/coding-standard/issues",
+        "forum": "https://aplus-framework.com/forum",
+        "source": "https://gitlab.com/aplus-framework/libraries/coding-standard",
+        "docs": "https://docs.aplus-framework.com/guides/libraries/coding-standard/"
+    },
+    "funding": [
+        {
+            "type": "Aplus Sponsor",
+            "url": "https://aplus-framework.com/sponsor"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "friendsofphp/php-cs-fixer": "~3.11.0"
+    },
+    "require-dev": {
+        "ext-xdebug": "*",
+        "ergebnis/composer-normalize": "^2.28",
+        "phpmd/phpmd": "^2.13",
+        "phpstan/phpstan": "^1.8",
+        "phpunit/phpunit": "^9.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Framework\\CodingStandard\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\CodingStandard\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        },
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}

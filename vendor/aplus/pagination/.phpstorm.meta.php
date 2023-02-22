@@ -1,0 +1,69 @@
+<?php
+/*
+ * This file is part of Aplus Framework Pagination Library.
+ *
+ * (c) Natan Felles <natanfelles@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPSTORM_META;
+
+registerArgumentsSet(
+    'views',
+    'head',
+    'header',
+    'pager',
+    'pagination',
+    'pagination-short',
+    'bootstrap',
+    'bootstrap-short',
+    'bootstrap5',
+    'bootstrap5-short',
+    'bulma',
+    'bulma-short',
+    'foundation',
+    'foundation-short',
+    'foundation6',
+    'foundation6-short',
+    'materialize',
+    'materialize-short',
+    'materialize1',
+    'materialize1-short',
+    'primer',
+    'primer-short',
+    'primer20',
+    'primer20-short',
+    'semantic-ui',
+    'semantic-ui-short',
+    'semantic-ui2',
+    'semantic-ui2-short',
+    'tailwind',
+    'tailwind-short',
+    'tailwind3',
+    'tailwind3-short',
+    'w3',
+    'w3-short',
+    'w34',
+    'w34-short',
+);
+expectedArguments(
+    \Framework\Pagination\Pager::getView(),
+    0,
+    argumentsSet('views')
+);
+expectedArguments(
+    \Framework\Pagination\Pager::render(),
+    0,
+    argumentsSet('views')
+);
+expectedArguments(
+    \Framework\Pagination\Pager::setDefaultView(),
+    0,
+    argumentsSet('views')
+);
+expectedArguments(
+    \Framework\Pagination\Pager::setView(),
+    0,
+    argumentsSet('views')
+);

@@ -1,0 +1,72 @@
+{
+    "name": "aplus/pagination",
+    "description": "Aplus Framework Pagination Library",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "pager",
+        "pagination",
+        "bootstrap",
+        "bulma",
+        "semantic-ui",
+        "tailwind",
+        "foundation"
+    ],
+    "authors": [
+        {
+            "name": "Natan Felles",
+            "email": "natanfelles@gmail.com",
+            "homepage": "https://natanfelles.github.io"
+        }
+    ],
+    "homepage": "https://aplus-framework.com/packages/pagination",
+    "support": {
+        "email": "support@aplus-framework.com",
+        "issues": "https://gitlab.com/aplus-framework/libraries/pagination/issues",
+        "forum": "https://aplus-framework.com/forum",
+        "source": "https://gitlab.com/aplus-framework/libraries/pagination",
+        "docs": "https://docs.aplus-framework.com/guides/libraries/pagination/"
+    },
+    "funding": [
+        {
+            "type": "Aplus Sponsor",
+            "url": "https://aplus-framework.com/sponsor"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*",
+        "aplus/helpers": "^3.0",
+        "aplus/http": "^5.3",
+        "aplus/language": "^3.0"
+    },
+    "require-dev": {
+        "ext-xdebug": "*",
+        "aplus/coding-standard": "^1.14",
+        "ergebnis/composer-normalize": "^2.25",
+        "jetbrains/phpstorm-attributes": "^1.0",
+        "phpmd/phpmd": "^2.13",
+        "phpstan/phpstan": "^1.5",
+        "phpunit/phpunit": "^9.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Framework\\Pagination\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Pagination\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        },
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}

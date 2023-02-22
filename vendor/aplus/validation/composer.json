@@ -1,0 +1,70 @@
+{
+    "name": "aplus/validation",
+    "description": "Aplus Framework Validation Library",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "validation",
+        "validator",
+        "files-validation"
+    ],
+    "authors": [
+        {
+            "name": "Natan Felles",
+            "email": "natanfelles@gmail.com",
+            "homepage": "https://natanfelles.github.io"
+        }
+    ],
+    "homepage": "https://aplus-framework.com/packages/validation",
+    "support": {
+        "email": "support@aplus-framework.com",
+        "issues": "https://gitlab.com/aplus-framework/libraries/validation/issues",
+        "forum": "https://aplus-framework.com/forum",
+        "source": "https://gitlab.com/aplus-framework/libraries/validation",
+        "docs": "https://docs.aplus-framework.com/guides/libraries/validation/"
+    },
+    "funding": [
+        {
+            "type": "Aplus Sponsor",
+            "url": "https://aplus-framework.com/sponsor"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "ext-fileinfo": "*",
+        "ext-intl": "*",
+        "ext-json": "*",
+        "aplus/debug": "^3.1",
+        "aplus/helpers": "^3.0",
+        "aplus/language": "^3.0"
+    },
+    "require-dev": {
+        "ext-xdebug": "*",
+        "aplus/coding-standard": "^1.14",
+        "ergebnis/composer-normalize": "^2.25",
+        "jetbrains/phpstorm-attributes": "^1.0",
+        "phpmd/phpmd": "^2.13",
+        "phpstan/phpstan": "^1.9",
+        "phpunit/phpunit": "^9.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Framework\\Validation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Validation\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        },
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}

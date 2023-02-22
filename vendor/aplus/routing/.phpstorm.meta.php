@@ -1,0 +1,69 @@
+<?php
+/*
+ * This file is part of Aplus Framework Routing Library.
+ *
+ * (c) Natan Felles <natanfelles@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPSTORM_META;
+
+registerArgumentsSet(
+    'redirect_codes',
+    \Framework\HTTP\Status::FOUND,
+    \Framework\HTTP\Status::MOVED_PERMANENTLY,
+    \Framework\HTTP\Status::MULTIPLE_CHOICES,
+    \Framework\HTTP\Status::NOT_MODIFIED,
+    \Framework\HTTP\Status::PERMANENT_REDIRECT,
+    \Framework\HTTP\Status::SEE_OTHER,
+    \Framework\HTTP\Status::SWITCH_PROXY,
+    \Framework\HTTP\Status::TEMPORARY_REDIRECT,
+    \Framework\HTTP\Status::USE_PROXY,
+);
+registerArgumentsSet(
+    'methods',
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+);
+registerArgumentsSet(
+    'placeholders',
+    '{alpha}',
+    '{alphanum}',
+    '{any}',
+    '{hex}',
+    '{int}',
+    '{md5}',
+    '{num}',
+    '{port}',
+    '{scheme}',
+    '{segment}',
+    '{slug}',
+    '{subdomain}',
+    '{title}',
+    '{uuid}',
+);
+expectedArguments(
+    \Framework\Routing\RouteCollection::redirect(),
+    2,
+    argumentsSet('redirect_codes')
+);
+expectedArguments(
+    \Framework\Routing\RouteCollection::resource(),
+    4,
+    argumentsSet('placeholders')
+);
+expectedArguments(
+    \Framework\Routing\RouteCollection::presenter(),
+    4,
+    argumentsSet('placeholders')
+);
+expectedArguments(
+    \Framework\Routing\Attributes\Route::__construct(),
+    0,
+    argumentsSet('methods')
+);

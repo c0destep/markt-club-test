@@ -1,0 +1,65 @@
+{
+    "name": "aplus/date",
+    "description": "Aplus Framework Date Library",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "date",
+        "datetime"
+    ],
+    "authors": [
+        {
+            "name": "Natan Felles",
+            "email": "natanfelles@gmail.com",
+            "homepage": "https://natanfelles.github.io"
+        }
+    ],
+    "homepage": "https://aplus-framework.com/packages/date",
+    "support": {
+        "email": "support@aplus-framework.com",
+        "issues": "https://gitlab.com/aplus-framework/libraries/date/issues",
+        "forum": "https://aplus-framework.com/forum",
+        "source": "https://gitlab.com/aplus-framework/libraries/date",
+        "docs": "https://docs.aplus-framework.com/guides/libraries/date/"
+    },
+    "funding": [
+        {
+            "type": "Aplus Sponsor",
+            "url": "https://aplus-framework.com/sponsor"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "ext-intl": "*",
+        "aplus/language": "^3.0"
+    },
+    "require-dev": {
+        "ext-json": "*",
+        "ext-xdebug": "*",
+        "aplus/coding-standard": "^1.14",
+        "ergebnis/composer-normalize": "^2.28",
+        "phpmd/phpmd": "^2.13",
+        "phpstan/phpstan": "^1.7",
+        "phpunit/phpunit": "^9.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Framework\\Date\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Date\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        },
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}

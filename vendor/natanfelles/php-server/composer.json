@@ -1,0 +1,36 @@
+{
+    "name": "natanfelles/php-server",
+    "description": "Fine tuning on the PHP Built-in web server.",
+    "type": "library",
+    "keywords": [
+        "server",
+        "php-server",
+        "webserver",
+        "dev",
+        "development",
+        "document-root",
+        "autoindex",
+        "rewrite",
+        "mod-rewrite",
+        "devtools"
+    ],
+    "homepage": "https://github.com/natanfelles/php-server",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Natan Felles",
+            "email": "natanfelles@gmail.com",
+            "homepage": "https://natanfelles.github.io"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/natanfelles/php-server/issues",
+        "source": "https://github.com/natanfelles/php-server"
+    },
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "bin": [
+        "bin/php-server"
+    ]
+}

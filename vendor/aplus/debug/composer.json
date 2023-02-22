@@ -1,0 +1,80 @@
+{
+    "name": "aplus/debug",
+    "description": "Aplus Framework Debug Library",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "debug",
+        "timer",
+        "error",
+        "handler",
+        "error-handling",
+        "exception-handling",
+        "exception",
+        "log",
+        "error-reporting",
+        "view"
+    ],
+    "authors": [
+        {
+            "name": "Natan Felles",
+            "email": "natanfelles@gmail.com",
+            "homepage": "https://natanfelles.github.io"
+        }
+    ],
+    "homepage": "https://aplus-framework.com/packages/debug",
+    "support": {
+        "email": "support@aplus-framework.com",
+        "issues": "https://gitlab.com/aplus-framework/libraries/debug/issues",
+        "forum": "https://aplus-framework.com/forum",
+        "source": "https://gitlab.com/aplus-framework/libraries/debug",
+        "docs": "https://docs.aplus-framework.com/guides/libraries/debug/"
+    },
+    "funding": [
+        {
+            "type": "Aplus Sponsor",
+            "url": "https://aplus-framework.com/sponsor"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "aplus/cli": "^2.1",
+        "aplus/helpers": "^3.0",
+        "aplus/language": "^3.0",
+        "aplus/log": "^3.0"
+    },
+    "require-dev": {
+        "ext-xdebug": "*",
+        "aplus/coding-standard": "^1.14",
+        "ergebnis/composer-normalize": "^2.25",
+        "jetbrains/phpstorm-attributes": "^1.0",
+        "phpmd/phpmd": "^2.13",
+        "phpstan/phpstan": "^1.5",
+        "phpunit/phpunit": "^9.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Framework\\Debug\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Debug\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        },
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.x-dev"
+        }
+    }
+}

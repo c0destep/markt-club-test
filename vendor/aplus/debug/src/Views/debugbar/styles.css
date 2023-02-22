@@ -1,0 +1,365 @@
+.aplus-debug {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: normal;
+    line-height: normal;
+    z-index: 9999;
+}
+
+.aplus-debug *,
+.aplus-debug ::after,
+.aplus-debug ::before {
+    box-sizing: unset;
+}
+
+.aplus-debug h1,
+.aplus-debug h2,
+.aplus-debug h3,
+.aplus-debug h4,
+.aplus-debug h5,
+.aplus-debug h6 {
+    color: #fff;
+    font-family: inherit;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.aplus-debug h1 {
+    font-size: 32px;
+}
+
+.aplus-debug h2 {
+    font-size: 24px;
+}
+
+.aplus-debug h3 {
+    font-size: 19px;
+}
+
+.aplus-debug h4 {
+    font-size: 16px;
+}
+
+.aplus-debug h5 {
+    font-size: 13px;
+}
+
+.aplus-debug h6 {
+    font-size: 11px;
+}
+
+.aplus-debug a {
+    color: magenta;
+    text-decoration: none;
+}
+
+.aplus-debug p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.aplus-debug hr {
+    background: #222;
+    border: 0;
+    height: 1px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+.aplus-debug pre {
+    background: #000;
+    color: #eee;
+    padding: 16px;
+    margin: 0;
+    overflow: auto;
+    border: 1px solid #222;
+    border-radius: 4px;
+}
+
+.aplus-debug code {
+    background: #000;
+    font-family: 'JetBrains Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.aplus-debug :not(td) > pre {
+    margin-bottom: 10px !important;
+}
+
+.aplus-debug :not(pre) > code {
+    background: #222;
+    color: inherit;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.aplus-debug button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 4px;
+    padding: 3px 5px;
+    height: 11px;
+    line-height: 11px;
+    margin: 0;
+    text-transform: none;
+}
+
+.aplus-debug button:hover {
+    background-color: #eee;
+    color: #000;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+.aplus-debug button.active {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}
+
+.aplus-debug img {
+    background: inherit;
+    border: 0;
+}
+
+.aplus-debug select {
+    background: none;
+    color: #fff;
+    border: 1px solid #222;
+    font-size: 14px;
+    padding: 3px 5px;
+    height: 16px;
+    line-height: 16px;
+}
+
+.aplus-debug select:hover {
+    cursor: pointer;
+}
+
+.aplus-debug select:disabled {
+    border-color: #000;
+    color: #666;
+    cursor: default;
+}
+
+.aplus-debug strong {
+    color: inherit;
+}
+
+.aplus-debug ul {
+    padding-left: 15px;
+}
+
+.aplus-debug .panels {
+    background: #000;
+    position: fixed;
+    bottom: 43px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.aplus-debug .panels .panel {
+    display: none;
+    margin: 0;
+}
+
+.aplus-debug .panels .panel .contents > * {
+    display: none;
+}
+
+.aplus-debug .panels .panel .resize {
+    cursor: ns-resize;
+    width: 100%;
+    height: 2px;
+    background: #222;
+    border-bottom: 2px solid #000;
+}
+
+.aplus-debug table {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #eee;
+    width: 100%;
+    text-align: left;
+    table-layout: auto;
+}
+
+.aplus-debug td table {
+    margin: 0;
+}
+
+.aplus-debug table,
+.aplus-debug th,
+.aplus-debug td {
+    border: 1px solid #222;
+}
+
+.aplus-debug td,
+.aplus-debug th {
+    padding: 8px;
+}
+
+.aplus-debug th {
+    color: #fff;
+    background: #000;
+}
+
+.aplus-debug thead th {
+    border-bottom: 2px solid #222;
+}
+
+.aplus-debug tbody th {
+    border-right: 2px solid #222;
+}
+
+.aplus-debug tbody td table thead th {
+    border-right-width: 1px;
+}
+
+.aplus-debug tr:hover {
+    background: #111;
+}
+
+.aplus-debug tr.active {
+    background: #333;
+}
+
+.aplus-debug .panels header {
+    background-color: #000;
+    border-bottom: 1px solid #222;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 10px 2px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.aplus-debug .panels header .title {
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    font-size: inherit;
+    margin: 0;
+}
+
+.aplus-debug .panels header .actions {
+    margin-left: auto;
+}
+
+.aplus-debug .panels header .collectors {
+    margin-left: 5px;
+}
+
+.aplus-debug .panels .contents {
+    height: 250px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.aplus-debug .panels .contents a:hover {
+    text-decoration: underline;
+}
+
+.aplus-debug .panels .contents button {
+    border-color: #222;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.aplus-debug .panels .contents button:hover {
+    border-color: #fff;
+}
+
+.aplus-debug .toolbar {
+    background-color: #000;
+    border-top: 1px solid #222;
+    border-right: 1px solid #222;
+    box-shadow: rgba(255, 255, 255, .25) 0 2px 5px 0;
+    height: 42px;
+    line-height: 0;
+    padding: 0 5px 0 5px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+.aplus-debug .toolbar .icon {
+    display: inline;
+    cursor: pointer;
+}
+
+.aplus-debug .toolbar .collections {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.aplus-debug .toolbar .collections .collection {
+    margin-left: 5px;
+}
+
+.aplus-debug .toolbar .collections .info {
+    margin-left: auto;
+}
+
+.aplus-debug .info-collection table th:last-of-type,
+.aplus-debug .info-collection table td:last-of-type {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 8px 0;
+    width: 50%
+}
+
+.aplus-debug .info-collection table th span {
+    float: left;
+    text-align: right;
+    width: 10%;
+}
+
+.aplus-debug .info-collection table td span {
+    background: magenta;
+    display: block;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.aplus-debug .info-collection table td:last-of-type {
+    background: repeating-linear-gradient(
+        to right,
+        #111,
+        #111 10%,
+        #000 10%,
+        #000 20%
+    );
+}
+
+.aplus-debug .info-collection table tr:hover td:last-of-type {
+    background: repeating-linear-gradient(
+        to right,
+        #222,
+        #222 10%,
+        #111 10%,
+        #111 20%
+    );
+}
+
+.aplus-debug.inverted {
+    filter: invert(1);
+}

@@ -1,0 +1,85 @@
+<?php
+/*
+ * This file is part of Aplus Framework Validation Library.
+ *
+ * (c) Natan Felles <natanfelles@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+namespace PHPSTORM_META;
+
+registerArgumentsSet(
+    'rules',
+    'alpha',
+    'alphaNumber',
+    'array',
+    'base64',
+    'between',
+    'blank',
+    'bool',
+    'datetime',
+    'dim',
+    'email',
+    'empty',
+    'equals',
+    'ext',
+    'float',
+    'greater',
+    'greaterOrEqual',
+    'hex',
+    'hexColor',
+    'image',
+    'in',
+    'int',
+    'ip',
+    'isset',
+    'json',
+    'latin',
+    'length',
+    'less',
+    'lessOrEqual',
+    'maxDim',
+    'maxLength',
+    'maxSize',
+    'md5',
+    'mimes',
+    'minDim',
+    'minLength',
+    'notBetween',
+    'notEquals',
+    'notIn',
+    'notRegex',
+    'null',
+    'number',
+    'object',
+    'optional',
+    'regex',
+    'required',
+    'specialChar',
+    'string',
+    'timezone',
+    'uploaded',
+    'url',
+    'uuid',
+);
+expectedArguments(
+    \Framework\Validation\Validation::getMessage(),
+    1,
+    argumentsSet('rules')
+);
+expectedArguments(
+    \Framework\Validation\Validation::isRuleAvailable(),
+    0,
+    argumentsSet('rules')
+);
+expectedArguments(
+    \Framework\Validation\Validation::setMessage(),
+    1,
+    argumentsSet('rules')
+);
+expectedArguments(
+    \Framework\Validation\Validation::setRule(),
+    1,
+    argumentsSet('rules')
+);

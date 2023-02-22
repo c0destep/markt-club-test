@@ -1,0 +1,63 @@
+{
+    "name": "aplus/dev-commands",
+    "description": "Aplus Framework Dev Commands Library",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "cli",
+        "commands"
+    ],
+    "authors": [
+        {
+            "name": "Natan Felles",
+            "email": "natanfelles@gmail.com",
+            "homepage": "https://natanfelles.github.io"
+        }
+    ],
+    "homepage": "https://aplus-framework.com/packages/dev-commands",
+    "support": {
+        "email": "support@aplus-framework.com",
+        "issues": "https://gitlab.com/aplus-framework/libraries/dev-commands/issues",
+        "forum": "https://aplus-framework.com/forum",
+        "source": "https://gitlab.com/aplus-framework/libraries/dev-commands",
+        "docs": "https://docs.aplus-framework.com/guides/libraries/dev-commands/"
+    },
+    "funding": [
+        {
+            "type": "Aplus Sponsor",
+            "url": "https://aplus-framework.com/sponsor"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "aplus/mvc": "^3.0"
+    },
+    "require-dev": {
+        "ext-xdebug": "*",
+        "aplus/coding-standard": "^1.12",
+        "aplus/testing": "^1.0",
+        "ergebnis/composer-normalize": "^2.26",
+        "phpmd/phpmd": "^2.12",
+        "phpstan/phpstan": "^1.7"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Framework\\CLI\\Commands\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\CLI\\Commands\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        },
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}

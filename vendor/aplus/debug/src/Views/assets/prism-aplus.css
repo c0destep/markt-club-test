@@ -1,0 +1,126 @@
+/*!
+ * Aplus Theme for Prism
+ * @author natanfelles
+ */
+.aplus-debug code[class*=language-],
+.aplus-debug pre[class*=language-] {
+    color: #ddd;
+    font-family: 'JetBrains Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none
+}
+
+.aplus-debug pre[class*=language-] {
+    margin: 0;
+    overflow: auto;
+    border-radius: 4px
+}
+
+.aplus-debug :not(pre) > code[class*=language-] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal
+}
+
+.aplus-debug .token.cdata,
+.aplus-debug .token.comment,
+.aplus-debug .token.doctype,
+.aplus-debug .token.prolog {
+    color: #5c6370
+}
+
+.aplus-debug .token.operator,
+.aplus-debug .token.punctuation {
+    color: #abb2bf
+}
+
+.aplus-debug .token.namespace {
+    opacity: .7
+}
+
+.aplus-debug .token.attr-name,
+.aplus-debug .token.boolean,
+.aplus-debug .token.constant,
+.aplus-debug .token.deleted,
+.aplus-debug .token.name,
+.aplus-debug .token.number,
+.aplus-debug .token.selector,
+.aplus-debug .token.symbol,
+.aplus-debug .token.char-class-punctuation.punctuation {
+    color: #d19a66
+}
+
+.aplus-debug code.language-regex,
+.aplus-debug .language-css .token.string,
+.aplus-debug .style .token.string,
+.aplus-debug .token.argument-delimiter.operator,
+.aplus-debug .token.attr-value,
+.aplus-debug .token.builtin,
+.aplus-debug .token.char,
+.aplus-debug .token.char-class,
+.aplus-debug .token.inserted,
+.aplus-debug .token.range,
+.aplus-debug .token.regex,
+.aplus-debug .token.string,
+.aplus-debug .token.string.url,
+.aplus-debug .token.url {
+    color: #98c379
+}
+
+.aplus-debug .token.doctype,
+.aplus-debug .token.entity,
+.aplus-debug .token.parameter,
+.aplus-debug .token.property,
+.aplus-debug .token.tag,
+.aplus-debug .token.variable {
+    color: #eb6772
+}
+
+.aplus-debug .token.function,
+.aplus-debug .token.section-name {
+    color: #61afef
+}
+
+.aplus-debug .token.class-name,
+.aplus-debug .token.package {
+    color: #e5c07b
+}
+
+.aplus-debug .token.builtin.class-name {
+    color: #55b6c2
+}
+
+.aplus-debug .token.atrule,
+.aplus-debug .token.key.attr-name,
+.aplus-debug .token.keyword,
+.aplus-debug .token.range-punctuation {
+    color: #c678dd
+}
+
+.aplus-debug .token.important {
+    color: #be5046
+}
+
+.aplus-debug .token.bold,
+.aplus-debug .token.important {
+    font-weight: 700
+}
+
+.aplus-debug .token.italic {
+    font-style: italic
+}
+
+.aplus-debug .token.entity {
+    cursor: help
+}
